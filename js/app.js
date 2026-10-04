@@ -26,15 +26,15 @@ function agregarAlumno(event) {
 
     // Verificación de datos válidos
     if (!nombre) {
-        errorDiv.textContent = 'Por favor ingrese el nombre del alumno.';
+        errorDiv.textContent = 'Por favor ingrese el nombre del estudiante.';
         return;
     }
     if (isNaN(c1) || isNaN(c2) || isNaN(c3) || c1 < 0 || c2 < 0 || c3 < 0 || c1 > 100 || c2 > 100 || c3 > 100) {
-        errorDiv.textContent = 'Por favor ingrese notas válidas entre 0 y 100 para los 3 certámenes.';
+        errorDiv.textContent = 'Por favor ingrese notas válidas entre 0 y 100.';
         return;
     }
     if (totalAlumnos >= 10) {
-        errorDiv.textContent = 'Se ha alcanzado el límite máximo de 10 alumnos.';
+        errorDiv.textContent = 'Se ha alcanzado el límite máximo de 10 estudiantes.';
         return;
     }
 
@@ -96,7 +96,7 @@ function renderizarResultados() {
         const prom = calcularPromedioAlumno(i);
         htmlDetails += `
             <div class="alumno-item">
-                <p class="bold">Nombre ${i + 1}: ${nombres[i]}</p>
+                <p class="bold">Nombre del estudiante ${i + 1}: ${nombres[i]}</p>
                 <p>C1: ${notas[i][0]}</p>
                 <p>C2: ${notas[i][1]}</p>
                 <p>C3: ${notas[i][2]}</p>
