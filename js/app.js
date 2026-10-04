@@ -63,7 +63,7 @@ function agregarAlumno(event) {
 function calcularPromedioAlumno(index) {
     const notasAlumno = notas[index];
     const suma = notasAlumno.reduce((acc, curr) => acc + curr, 0);
-    return limitarRango100(suma / notasAlumno.length);
+    return limitarRango100(suma / notasAlumno.length);  
 }
 // Cálculo del promedio del curso por notadel curso (0, 1 o 2)
 function calcularPromedioCertamen(certamenIndex) {

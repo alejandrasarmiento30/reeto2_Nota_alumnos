@@ -1,0 +1,114 @@
+* { /*se encarga de inicializar las propiedades de todos los elementos*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {/*se encarga de inicializar las propiedades de todos los elementos*/
+    background-color: #f4f4f4;
+    color: #222222;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+}
+.main-container { /*estilo al contenedor principal*/
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card { /*se encarga de dar estilo a la tarjeta principal*/
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 24px 28px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e2e2;
+}
+.form-group { /*estilo al grupo de elementos del formulario*/
+    margin-bottom: 18px;
+}
+.form-group label { /*estilo al label del formulario*/
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #111111;
+}
+.form-group input { /*da estilo al input del formulario*/
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+.form-group input:focus { /*da estilo al input cuando está enfocado*/
+    border-color: #4caf50;
+}
+
+.btn-green { /*se encarga de dar estilo al botón verde*/
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 5px;
+    transition: background-color 0.2s;
+}
+.btn-green:hover { /*da estilo al botón verde cuando se pasa el mouse por encima*/
+    background-color: #43a047;
+}
+.btn-green:disabled { /*da estilo al botón verde cuando está deshabilitado*/
+    background-color: #a5d6a7;
+    cursor: not-allowed;
+}
+
+.error-msg { /*estilo al mensaje de error*/
+    color: #d32f2f;
+    font-size: 14px;
+    margin-top: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.output-block {/*da estilo al bloque de salida*/
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111111;
+}
+
+.alumno-item {/*da estilo a cada elemento de la lista de alumnos*/
+    margin-bottom: 15px;
+}
+.alumno-item p { /*estilo para el párrafo dentro de cada elemento de la lista*/
+    margin-bottom: 2px;
+}
+
+.bold { /*da el estilo en negrita*/
+    font-weight: bold;
+}
+
+.totales-section { /*da estilo a la sección de totales*/
+    margin-top: 20px;
+}
+
+.ranking-block { /*da estilo al bloque de clasificación*/
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #eeeeee;
+}
+.ranking-title { /*da estilo al título de la clasificación*/
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.ranking-item { /*da estilo al elemento de la clasificación*/
+    margin-bottom: 4px;
+    font-size: 15px;
+}
