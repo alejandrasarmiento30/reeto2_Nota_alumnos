@@ -96,7 +96,7 @@ function renderizarResultados() {
         const prom = calcularPromedioAlumno(i);
         htmlDetails += `
             <div class="alumno-item">
-                <p class="bold">Nombre del estudiante ${i + 1}: ${nombres[i]}</p>
+                <p class="bold">Nombre del Estudiante ${i + 1}: ${nombres[i]}</p>
                 <p>C1: ${notas[i][0]}</p>
                 <p>C2: ${notas[i][1]}</p>
                 <p>C3: ${notas[i][2]}</p>
@@ -132,7 +132,7 @@ function renderizarResultados() {
 
     // Clasificación y ordenamiento por promedio (de mayor a menor)
     const rankingOrdenado = [...listaAlumnos].sort((a, b) => b.promedio - a.promedio);
-    let htmlRanking = '<div class="ranking-title">Alumnos Ordenados por Promedio:</div>';
+    let htmlRanking = '<div class="ranking-title">Estudiantes Ordenados por Promedio:</div>';
     rankingOrdenado.forEach((al, index) => {
         htmlRanking += `
             <div class="ranking-item">
