@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Notas de Alumnos</title>
+    <!-- Vinculación del archivo CSS en la carpeta css/ -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Formulario de ingreso de datos -->
+        <div class="card card-form">
+            <form id="student-form" onsubmit="agregarAlumno(event)">
+                <div class="form-group">
+                    <label for="nombre">Nombre del estudiante:</label>
+                    <input type="text" id="nombre" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="curso_1">curso 1:</label>
+                    <input type="number" id="curso_1" step="any">
+                </div>
+                <div class="form-group">
+                    <label for="curso_2">curso 2:</label>
+                    <input type="number" id="curso_2" step="any">
+                </div>
+                <div class="form-group">
+                    <label for="curso_3">curso 3:</label>
+                    <input type="number" id="curso_3" step="any">
+                </div>
+                <button type="submit" id="btn-submit" class="btn-green">Agregar Alumno</button>
+            </form>
+            <div id="error-message" class="error-msg"></div>
+        </div>
+
+        <!-- Resultados mostrados bajo el formulario -->
+        <div class="card card-results" id="results-card" style="display: none;">
+            <!-- Detalle por alumno, promedios de curso, aprobados/reprobados -->
+            <div id="output-details" class="output-block"></div>
+
+            <!-- Ranking ordenado de alumnos -->
+            <div id="output-ranking" class="ranking-block"></div>
+        </div>
+    </div>
+
+    <!-- Vinculación del script JavaScript en la carpeta js/ -->
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #222222;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 24px 28px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e2e2;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #111111;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #4caf50;
+}
+
+.btn-green {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 5px;
+    transition: background-color 0.2s;
+}
+
+.btn-green:hover {
+    background-color: #43a047;
+}
+
+.btn-green:disabled {
+    background-color: #a5d6a7;
+    cursor: not-allowed;
+}
+
+.error-msg {
+    color: #d32f2f;
+    font-size: 14px;
+    margin-top: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.output-block {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111111;
+}
+
+.alumno-item {
+    margin-bottom: 15px;
+}
+
+.alumno-item p {
+    margin-bottom: 2px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.totales-section {
+    margin-top: 20px;
+}
+
+.ranking-block {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #eeeeee;
+}
+
+.ranking-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.ranking-item {
+    margin-bottom: 4px;
+    font-size: 15px;
+}
